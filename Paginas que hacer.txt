@@ -1,0 +1,17 @@
+PAGINAS:
+1. INICIO
+2. BROWNIES
+5. NOSOTROS
+6. AYUDA
+
+Al dar click en Registrar
+Me lleva a home para seguir comprando
+Al dar click en Mariana hay menu desplegable
+9. MI PERFIL
+10. DIRECCIONES
+11. PEDIDOS
+12. PUNTOS
+
+	ADMINISTRADOR
+CLIENTES
+PEDIDOS

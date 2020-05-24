@@ -1,0 +1,309 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box; 
+}
+/*MENU*/
+body{
+    font-family: Verdana;
+}
+header{
+    height: 100px;
+    background: #ffde59;
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-around;
+    font-family: verdana;
+    font-weight: bold;
+}
+header>ul{
+    display: flex;
+    height: 100%;
+    justify-content: flex-end;
+   
+}
+header ul li{
+    margin-top: 18px;
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid black;
+}
+header a{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-decoration: none;
+    color: black; 
+}
+.IniciarSesion{
+    width: 12%;
+    height: 40%;
+    margin-right: 10px;     
+}
+.IniciarSesion>a:hover{
+    color: white;
+    transition: background-color 1s;
+  }
+  #carritoImg{
+    width: 20px;
+     height:20px;
+  }
+.Carrito{
+    width: 2%;
+    height: 40%;
+    margin-right: 80px; 
+}
+.logoImg{
+    width: 80px;
+    height: 80px;
+    margin-top: 10px;
+    margin-left: 20px;
+    border: 2px solid black;
+}
+.logo{
+    display: flex;
+    justify-content: space-around;
+    width: 20%;
+}
+
+.logo li{
+    list-style: none;
+    border: 2px solid black;
+}
+nav{
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: Verdana;
+    font-weight: bold;
+    font-size: 18px;
+}
+.menu{
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+}
+.menu a{
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+}
+.menu li{
+    list-style: none;
+}
+.menu li a:hover{
+    background-color:#ff5757;
+    color: white;
+    transition: background-color 1s;
+}
+.burger{
+    display: none;
+    cursor: pointer;
+}
+.burger div{
+    width: 25px;
+    height: 5px;
+    background-color:black;
+    margin: 5px;
+}
+/* FIN MENU*/
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    }
+    .dots{
+      margin-top: 25px;
+    }
+    /* Next & previous buttons */
+    .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    }
+    /* Position the "next button" to the right */
+    .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+    }
+    
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+    }
+    /* The dots/bullets/indicators */
+    .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    }
+    .active, .dot:hover {
+    background-color: #717171;
+    }
+    /* Fading animation */
+    .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 2.5s;
+    }
+    @-webkit-keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+        }
+        
+        @keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+        }
+/*FIN DEL SLIDER*/
+
+    /*CELLPHONE*/
+@media (max-width: 599px){
+    body{
+        overflow-x: hidden;
+    }
+    .menu{
+        position: absolute;
+        right: 0px;
+        font-size: 14px;
+        height: 92vh;
+        top: 8.5vh;
+        background-color:#ffde59 ;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+    .menu-active{
+        transform: translateX(0%);
+    }
+    .menu li{
+        opacity: 0;
+    }
+    .burger{
+        display: block;
+        margin-top: 15px;
+        margin-right: -60px;
+    }
+    .logoImg{
+      display: none;
+    }
+    #carritoImg{
+        display: none;
+        width: 20px;
+        height:20px;
+      }
+      .IniciarSesion{
+          display: none;
+      }
+    }
+    @keyframes menuLinkFade{
+        from{
+            opacity: 0;
+            transform: translateX(50px);
+        }
+        to{
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    }
+    
+        /*Tablets*/
+@media (min-width: 600px) and (max-width: 990px){
+    body{
+        overflow-x: hidden;
+    }
+    .menu{
+        position: absolute;
+        right: 0px;
+        font-size: 14px;
+        height: 92vh;
+        top: 8.5vh;
+        background-color:#ffde59 ;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 30%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+    .menu-active{
+        transform: translateX(0%);
+    }
+    .menu li{
+        opacity: 0;
+       
+    }
+    .burger{
+        display: block;
+        margin-top: 15px;
+        margin-right: -60px;
+    }
+    .logoImg{
+      display: none;
+    }
+    #carritoImg{
+        display: none;
+        width: 20px;
+        height:20px;
+      }
+      .IniciarSesion{
+          display: none;
+      }
+    }
+    @keyframes menuLinkFade{
+        from{
+            opacity: 0;
+            transform: translateX(50px);
+        }
+        to{
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    }
+    /*header a{
+        font-size: 13px;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        text-decoration: none;
+        color: black; 
+        }
+    .logoImg{
+        width: 150px;
+        height: 150px;
+        margin-top: -60px;
+        margin-left: 20px;
+    }
+    nav{
+        display: flex;
+        justify-content: space-around;
+        font-size: 16px;
+    }
+    .menu{
+        display: flex;
+        justify-content: space-around;
+        width: 60%;
+        margin-top: 35px;
+        margin-right: 100px;
+    }*/
+    /*Tablets pequeñas*/
